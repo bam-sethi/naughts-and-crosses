@@ -1,0 +1,28 @@
+/*body {
+  margin: 0;
+  display: block;
+}*/
+h1{
+  text-align: center;
+  color: black;
+}
+.container{
+  
+  display: inline-block;
+  position: absolute;
+  height: 50%;
+  width: 50%;
+  text-align: center;
+
+}
+.grid{
+  display: inline-block;
+    float: left;
+    position: relative;
+    width: 30%;
+    padding-bottom: 30%;
+    background-position: center center;
+/*    background-size: cover;*/
+    border: 10px solid black;
+}
+
