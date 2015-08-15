@@ -1,28 +1,82 @@
-/*body {
-  margin: 0;
+body {
   display: block;
-}*/
+  margin: 0;
+  padding: 0;
+}
 h1{
   text-align: center;
   color: black;
 }
-.container{
-  
-  display: inline-block;
+/*.container{*/
+/*  display: inline-block;
   position: absolute;
-  height: 50%;
+  height: 40%;
+  width: 40%;*/
+/*  padding: 100px 400px 100px 400px;*/
+/*  margin: 0px auto;*/
+}
+.container{
+  display: block;
+  position: absolute;
+  max-width: 100px;
+  max-height: 100px;
   width: 50%;
-  text-align: center;
-
+  height: 50%;
+/*  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;*/
+/*  margin: 0 auto;*/
 }
 .grid{
   display: inline-block;
-    float: left;
-    position: relative;
-    width: 30%;
-    padding-bottom: 30%;
-    background-position: center center;
-/*    background-size: cover;*/
-    border: 10px solid black;
+  float: left;
+  position: relative;
+  width: 30%;
+  padding-bottom: 30%;
+  background-position: center center;
+/*  background-size: cover;*/
+  margin: 0 auto;
+}
+/*//row1*/
+#a1{
+  border-bottom: 10px solid black;
+  border-right: 10px solid black; 
+}
+#a2{
+/*  border-left: 10px solid black;*/
+  /*border-right: 10px black;*/
+  border-bottom: 10px solid black;
+}
+#a3{
+  border-left: 10px solid black;
+  border-bottom: 10px solid black;
+}
+/*//row2*/
+#b1{  
+  border-bottom: 10px solid black;
+  border-right: 10px solid black;
+}
+#b2{
+  border-bottom: 10px solid black;
+}
+#b3{ 
+  border-left: 10px solid black;
+  border-bottom: 10px solid black;
+}
+/*//row3*/
+#c1{ 
+  border-right: 10px solid black;
+}
+#c2{
+/*  border-top: 10px solid black;
+*//*/*  border-left: 10px solid black;
+  border-right: 10px solid black;
+*/
+}
+#c3{  
+/*  border-top: 10px solid black;*/
+  border-left: 10px solid black;
+
 }
 
