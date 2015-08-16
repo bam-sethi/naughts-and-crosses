@@ -98,15 +98,41 @@ square9.addEventListener("click", function(){
 });
 
 
+// var playAgainButton = document.getElementsByName("play-again");
+// playAgainButton.addEventListener("click", function(){
+//    square1.innerHTML = "";
+//     square2.innerHTML = "";
+//     square3.innerHTML = "";
+//     square4.innerHTML = "";
+//     square5.innerHTML = "";
+//     square6.innerHTML = "";
+//     square7.innerHTML = "";
+//     square8.innerHTML = "";
+//     square9.innerHTML = "";
+// });
 
-  
+
+
+
+var playAgain = document.getElementsByClassName("play-again");
+playAgain.addEventListener("click", function(){
+var box = document.getElementsByClassName("grid");
+//loop through an array of boxes
+  for (var i = 0; i < box.length; i ++){
+    box[i].innerHTML = "";
+  }
+});
+
+
+
+// });
 
 
 
 
 
 // //put this in an if statement or something
-// var playAgain = document.getElementsByClassName("play-again");
+// 
 // var board = document.getElementsByClassName("grid");
 // for (var i = 0; i < board.length; i ++){
 //   this.addEventListener("click", function(){
@@ -115,11 +141,11 @@ square9.addEventListener("click", function(){
 // });
 // }
 
-var playAgainButton = document.getElementsByClassName("play-again")
-addEventListener("click", function(){
-  var board = document.getElementsByClassName("grid");
-  board.innerHTML = "";  // Replaces body content with an empty string.
-});
+// var playAgainButton = document.getElementsByClassName("play-again")
+// addEventListener("click", function(){
+//   var board = document.getElementsByClassName("grid");
+//   box[0].innerHTML = “”;;  // Replaces body content with an empty string.
+// });
 
 
 
@@ -127,12 +153,7 @@ addEventListener("click", function(){
 
 
 
-// //get an array of boxes 
-// var box = document.getElementsByClassName("grid");
-// //loop through an array of boxes
-// for (var i = 0; i < box.length; i ++){
-// //add Event Listener- If box is clicked
-// box.addEventListener("click", function(){
+// //
 // var player = ['X','O']; 
 // //either insert X or O. Insert X if player 1's turn else insert 0
 // //Player 1 is always even,
