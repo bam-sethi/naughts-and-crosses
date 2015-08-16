@@ -107,6 +107,21 @@ square9.addEventListener("click", function(){
 });
 
 
+var playAgain = document.getElementById("play-more");
+playAgain.addEventListener("click", function(){
+  //when clicked reset the board
+  var board = document.getElementById("a1");
+  board.innerHTML = " ";
+
+})
+
+///
+
+///////// 
+///how to tell you when there is a winner
+//
+
+
 
 
 
