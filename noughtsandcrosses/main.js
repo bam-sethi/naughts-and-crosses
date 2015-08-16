@@ -121,8 +121,6 @@ square9.addEventListener("click", function(){
 });
 
 
-var winning = 
-
 
 
 
