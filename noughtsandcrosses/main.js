@@ -1,13 +1,20 @@
+var player1 = [];
+var player2 = [];
+
+
 var player;
+
 //row1
 var square = document.getElementById("a1");
 square.addEventListener("click", function(){
   if (player === 'x'){
   player ='o';
   this.innerHTML = player;
+  player1.push(player)
   } else {
   player = 'x';
   this.innerHTML = player;
+  player2.push(player)
   }
 });
 
@@ -16,10 +23,12 @@ square2.addEventListener("click", function(){
   if (player === 'x'){
   player ='o';
   square2.innerHTML = player;
+  player1.push(player)
 
   } else {
     player = 'x';
     square2.innerHTML = player;
+    player2.push(player)
 
   }
 });
@@ -29,9 +38,11 @@ square3.addEventListener("click", function(){
     if (player === 'x'){
     player ='o';
     square3.innerHTML = player;
+    player1.push(player)
   } else {
     player = 'x';
     square3.innerHTML = player;
+    player2.push(player)
   }
 });
 //row 2
@@ -40,9 +51,11 @@ square4.addEventListener("click", function(){
   if (player === 'x'){
   player ='o';
   square4.innerHTML = player;
+  player1.push(player)
   } else {
     player = 'x';
     square4.innerHTML = player;
+    player2.push(player)
   }
 });
 var square5 = document.getElementById("b2");
@@ -50,9 +63,11 @@ square5.addEventListener("click", function(){
   if (player === 'x'){
   player ='o';
   square5.innerHTML = player;
+  player1.push(player)
   } else {
     player = 'x';
     square5.innerHTML = player;
+    player2.push(player)
   }
 });
 var square6 = document.getElementById("b3");
@@ -60,9 +75,11 @@ square6.addEventListener("click", function(){
   if (player === 'x'){
   player ='o';
   square6.innerHTML = player;
+  player1.push(player)
   } else {
     player = 'x';
     square6.innerHTML = player;
+    player2.push(player)
   }
 });
 //row 3
@@ -71,9 +88,11 @@ square7.addEventListener("click", function(){
   if (player === 'x'){
   player ='o';
   square7.innerHTML = player;
+  player1.push(player)
   } else {
     player = 'x';
     square7.innerHTML = player;
+    player2.push(player)
   }
 });
 var square8 = document.getElementById("c2");
@@ -81,9 +100,11 @@ square8.addEventListener("click", function(){
   if (player === 'x'){
   player ='o';
   square8.innerHTML = player;
+  player1.push(player)
   } else {
     player = 'x';
     square8.innerHTML = player;
+    player2.push(player)
   }
 });
 var square9 = document.getElementById("c3");
@@ -91,17 +112,35 @@ square9.addEventListener("click", function(){
   if (player === 'x'){
   player ='o';
   square9.innerHTML = player;
+  player1.push(player)
   } else {
     player = 'x';
     square9.innerHTML = player;
+    player2.push(player)
   }
 });
 
 
+var winning = 
 
+
+
+
+
+//Who won?
+
+//playerOne and playerTwo
+//push the clicked divs into each of those arrays
+//create another variable of winning combinations
+//which lists arrays of all the possible winning combos, and then compare your player array variables against that to see if there's a match
+
+
+
+
+
+//PlayAgainButton
 // create a function that will iterate through every index of the box/grid and
 // wipe the contents
-
 function playAgain(){
 var box = document.getElementsByClassName("grid");
 //loop through an array of boxes
@@ -113,9 +152,9 @@ var box = document.getElementsByClassName("grid");
 var playAgainButton = document.getElementById("play-more");
 playAgainButton.addEventListener("click", playAgain);
 
-// });
 
 
+  
 
 
 
