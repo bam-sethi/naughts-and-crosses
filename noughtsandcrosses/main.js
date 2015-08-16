@@ -98,32 +98,20 @@ square9.addEventListener("click", function(){
 });
 
 
-// var playAgainButton = document.getElementsByName("play-again");
-// playAgainButton.addEventListener("click", function(){
-//    square1.innerHTML = "";
-//     square2.innerHTML = "";
-//     square3.innerHTML = "";
-//     square4.innerHTML = "";
-//     square5.innerHTML = "";
-//     square6.innerHTML = "";
-//     square7.innerHTML = "";
-//     square8.innerHTML = "";
-//     square9.innerHTML = "";
-// });
 
+// create a function that will iterate through every index of the box/grid and
+// wipe the contents
 
-
-
-var playAgain = document.getElementsByClassName("play-again");
-playAgain.addEventListener("click", function(){
+function playAgain(){
 var box = document.getElementsByClassName("grid");
 //loop through an array of boxes
   for (var i = 0; i < box.length; i ++){
     box[i].innerHTML = "";
   }
-});
-
-
+}
+//THEN call the event listener on your function, gurrrrl
+var playAgainButton = document.getElementById("play-more");
+playAgainButton.addEventListener("click", playAgain);
 
 // });
 
@@ -132,7 +120,7 @@ var box = document.getElementsByClassName("grid");
 
 
 // //put this in an if statement or something
-// 
+// /// this is wrong because you are calling
 // var board = document.getElementsByClassName("grid");
 // for (var i = 0; i < board.length; i ++){
 //   this.addEventListener("click", function(){
@@ -148,7 +136,18 @@ var box = document.getElementsByClassName("grid");
 // });
 
 
-
+// var playAgainButton = document.getElementsByName("play-again");
+// playAgainButton.addEventListener("click", function(){
+//    square1.innerHTML = "";
+//     square2.innerHTML = "";
+//     square3.innerHTML = "";
+//     square4.innerHTML = "";
+//     square5.innerHTML = "";
+//     square6.innerHTML = "";
+//     square7.innerHTML = "";
+//     square8.innerHTML = "";
+//     square9.innerHTML = "";
+// });
 
 
 
